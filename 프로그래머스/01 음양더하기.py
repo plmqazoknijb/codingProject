@@ -13,3 +13,5 @@ if __name__ == "__main__":
     abs = [4, 7, 12]
     s = [True, False, True]
     print(solution(abs, s))
+
+
