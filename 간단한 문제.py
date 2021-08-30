@@ -45,3 +45,20 @@ print(movie_rank)
 movie_rank = ["닥터 스트레인지", "슈퍼맨","스플릿", "럭키","배트멘"]
 movie_rank.remove("럭키")
 print(movie_rank)
+
+# 11.다음 리스트의 합을 출력하라.
+nums = [1,2,3,4,5]
+print(sum(nums))
+
+# 12.다음 리스트에 저장된 데이터의 개수를 화면에 구하라.
+# 1) 중복을 허용했을때의 갯수
+cook = ["피자","김밥","만두","양념치킨","족발","피자","김치만두","쫄면","쏘세지","라면","팥빙수","김치전"]
+print(len(cook))
+# 2) 중복을 허용하지 않았을때의 갯수
+a = set(cook)
+print(len(a))
+
+# 13.다음 리스트의 평균을 출력하라.
+nums = [1,2,3,4,5]
+a = sum(nums)/len(nums)
+print(a)
