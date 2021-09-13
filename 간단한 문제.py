@@ -86,7 +86,10 @@ print(b)
 #interest 리스트를 사용하여 아래와 같이 화면에 출력하라.
 #출력 예시 : 삼성전자/LG전자/Naver/SK하이닉스/미래에셋대우
 interest = ['삼성전자', 'LG전자', 'Naver','SK하이닉스','미래에셋대우']
-print(interest[0]+'/'+interest[1]+'/'+interest[2]+'/'+interest[3]+'/'+interest[4])
+# print(interest[0]+'/'+interest[1]+'/'+interest[2]+'/'+interest[3]+'/'+interest[4])
+# 방법1
+a = '/'.join(interest) #join은 문자열을 합해주는 것(원본유지)
+print(a)
 
 # 16.회사 이름이 슬래시 ('/')로 구분되어 하나의 문자열로 저장되어 있다.
 # 이를 interest 이름의 리스트로 분리 저장하라.
@@ -96,7 +99,12 @@ print(interest)
 
 # 17.리스트에 있는 값을 오름차순으로 정렬하세요,
 data = [2,4,3,1,5,10,9]
+# 방법 1 (원본 변경)
 data.sort()
 print(data)
+#방법 2 (원본 유지)
+data = [2,4,3,1,5,10,9]
+a = sorted(data)
+print(a)
 
 
