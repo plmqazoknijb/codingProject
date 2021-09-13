@@ -107,4 +107,44 @@ data = [2,4,3,1,5,10,9]
 a = sorted(data)
 print(a)
 
+# 18. 사용자로부터 입력 받은 시간이 정각인지 판별하라.
+time = input("현재시간 입력(00:00): ")
+# if time[-2:] == "00":
+#     print("정각 입니다.")
+# else:
+#     print("정각이 아닙니다.")
+result = time.split(":")
+if result[-1] == "00":
+    print("정각 입니다.")
+else:
+    print("정각이 아닙니다.")
+
+# 19. 파일 이름이 저장된 리스트에서 확장하자 .h인 파일 이름을 출력하라.
+f_list = ['intra.h', 'intra.c', 'define.h', 'run.py']
+for a in f_list:
+    split = a.split(".")
+    if split[1] == "h":
+        print(a)
+
+# 20. for문을 사용해서 아래와 같이 출력하라
+# for num in range(10):
+#     print(num/10)
+#다른 방법
+for i in range(9+1):
+    print(str(0.1*i)[:3])
+
+# 21.리스트에 저장된 데이터를 아래와 같이 출력하라.
+apart = [ [101, 102], [201, 202], [301, 302] ]
+for row in apart:
+    for col in row:
+        print(col,"호")
+
+# 22.숫자로 구성된 하나의 리스트를 입력받아,
+# 짝수들을 추출하여 리스트를 반환하는 pickup_even 함수를 구현하라.
+def pickup_even(items):
+    result = []
+    for item in items:
+        if item % 2 == 0:
+            result.append(item)
+    return result
 
